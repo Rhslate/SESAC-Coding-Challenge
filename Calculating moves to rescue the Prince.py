@@ -1,4 +1,4 @@
-# Calculating moves to rescue the Princess
+# Bot saves Princess
 # bot = m, Princess = p
 # bot is in center of grid
 
