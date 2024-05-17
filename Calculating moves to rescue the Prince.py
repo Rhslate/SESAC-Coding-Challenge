@@ -1,9 +1,17 @@
-# Bot saves Princess
+# Calculating moves to rescue the Princess
 # bot = m, Princess = p
 # bot is in center of grid
+# p_pos = princess position
+# m_pos = bot position
 
-#grid = []
+def displayPathtoPrincess(n,grid):
 
+for i in range(n);
+    for j in range(n):
+        if grid[i][j] == 'm':
+            m_pos = (i, j)
+        elif grid[i][j] == 'p':
+            p_pos = (i, j)
 
 while m_pos != p_pos:
     if m_pos[0] < p_pos[0]:
@@ -26,6 +34,5 @@ while m_pos != p_pos:
     elif m_pos[1] > p_pos[1]:
          moves.append("RIGHT")
          m_pos = (m_pos[1], bot_pos[1] -1)
-        
-        
-print displayPathtoPrincess
+
+displayPathtoPrincess(m, grid)
