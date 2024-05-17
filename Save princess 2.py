@@ -23,7 +23,6 @@ def r():
 def c():
     print(c)
 
-
 if r > p:
     nextMove: "UP"
 if r <p:
@@ -34,3 +33,4 @@ if c < m:
     nextMove: "RIGHT"
 
 nextMove(N,r,c,grid)
+
