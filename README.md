@@ -1,3 +1,5 @@
+I used VS Code in conjunction with GitHub
+
 Bot saves princess
 
 The princess is trapped in one of the four corners of a grid, and my goal is to find and free her. 
@@ -8,4 +10,5 @@ My code can be run in the HackerRank's challengers page.
 
 Bot saves princess 2
 
-The princess is once again trapped, this time, the bot and the princes can be anywhere. My goal is to create code that specifically locates the princess not knowing where the bot has been placed. 
+The princess is once again trapped, this time, the bot and the princes can be anywhere. I was given four parameters (N, r, c, grid)-- the output will show the next move to the princess. The valid movements are LEFT, RIGHT, UP, and DOWN. I defined the valid movements, as well as defining m = bot and p = princess. 
+My code can be run in the HackerRank's challengers page. 
