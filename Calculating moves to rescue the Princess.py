@@ -1,7 +1,5 @@
 def displayPathtoPrincess(n, grid):
-    # Initialize positions
-    m_pos = None
-    p_pos = None
+   
 
     # Finding the positions of 'm' (bot) and 'p' (princess)
     for i in range(n):
