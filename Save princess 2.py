@@ -1,36 +1,25 @@
-#r = row
-#c = column
-#p = princess
-#m = bot
-
-def nextMove(N,r,c,grid):
+def nextMove(N, r, c, grid):
+    # Find the position of the princess
     for i in range(N):
         for j in range(N):
             if grid[i][j] == 'p':
-                p, m = i, j
+                p_r, p_c = i, j  # Store princess position
 
-def UP():
-    print("UP")
-def DOWN():
-    print("DOWN")
-def LEFT():
-    print("LEFT")
-def RIGHT():
-    print("RIGHT")
+    # Determining the move to get closer to the princess
+    if r > p_r:
+        print("UP")
+    elif r < p_r:
+        print("DOWN")
+    elif c > p_c:
+        print("LEFT")
+    elif c < p_c:
+        print("RIGHT")
+        
+if __name__ == "__main__":
+    N = int(input().strip())
+    r, c = map(int, input().strip().split())
+    grid = []
+    for _ in range(N):
+        grid.append(list(input().strip()))
 
-def r():
-    print(r)
-def c():
-    print(c)
-
-if r > p:
-    nextMove: "UP"
-if r <p:
-    nextMove: "DOWN"
-if c > m:
-    nextMove: "LEFT"
-if c < m:
-    nextMove: "RIGHT"
-
-nextMove(N,r,c,grid)
-
+    nextMove(N, r, c, grid)
